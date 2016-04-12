@@ -7,6 +7,8 @@ scalaVersion := "2.11.8"
 libraryDependencies += "com.amazonaws" % "aws-java-sdk" % "1.10.67"
 
 initialCommands in console := """
+import collection.JavaConverters._
+
 import com.amazonaws.regions._
 import com.amazonaws.services.ec2._
 
